@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline red;
+    margin-top: 20px;
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: grey;
+    margin: 20px 0;
+}
+.mainContainer{
+    margin: 0 60px;
+}
+.bold{
+    font-size: 15px;
+    font-weight: 700;
+}
+.blue{
+    color: blue;
+}

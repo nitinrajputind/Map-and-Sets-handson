@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Sets</title>
+
+    <!-- External StyleSheet  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Maps And Sets</h1>
+    <hr>
+    <div class="mainContainer">
+        <div class="question1">
+            <p class="bold">Q1 :- Problem:-
+                You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+                Your task is to remove all the duplicate occurrences of characters in the string.
+                <br>
+                <br>
+                Input : abcadeecfb <br>
+                <br>
+                Output : abcdef"
+            </p>
+            <p class="blue">ANS :- </p>
+            <pre class="blue">
+                var a = "abcbbssd"
+                let b = new Set(a)
+                b=[...b].join("")
+                console.log(b)
+            </pre>
+            <p class="blue">OUTPUT :- abcdef</p>
+        </div>
+        <hr>
+        <div class="question2">
+            <p class="bold">Q2 :- Problem :- You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
+                <br>
+                Input:- abcadeecfb <br> <br>
+                
+                Output: <br>
+                a=2 <br>
+                b=2 <br>
+                c=2 <br>
+                d=1 <br>
+                e=2 <br>
+                f=1 <br>
+            </p>
+            <p class="blue">ANS :- </p>
+            <pre class="blue">
+                function countAplhabtes(str){
+                    const aphabletCount = new Map()
+                    
+                    for(let char of str){
+                        if(aphabletCount.has(char)){
+                            aphabletCount.set(char, aphabletCount.get(char)+1)
+                        }
+                        else{
+                            aphabletCount.set(char, 1)
+                        }
+                    }
+                    for(let [char,count] of aphabletCount){
+                    console.log(`${char} = ${count}}`)
+                } 
+                }
+            </pre>
+            <p class="blue">OUTPUT :-   a=2 <br>
+                b=2 <br>
+                c=2 <br>
+                d=1 <br>
+                e=2 <br>
+                f=1 <br></p>
+        </div>
+        <hr>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
